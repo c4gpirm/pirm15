@@ -26,7 +26,7 @@ def hello():
 def preprocess_image(img):
     if img.mode != 'RGB':
         img = img.convert('RGB')
-    img = img.resize((150, 150))
+    img = img.resize((32, 32))
     img = image.img_to_array(img)
     img = np.expand_dims(img, axis=0)
     return img
